@@ -1,0 +1,132 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header{
+  padding: 4%;
+  text-align: center;
+  background-color: #053742;
+  color: #E8F0F2;
+  line-height: 1.6;
+}
+h1{
+  font-family: 'Otomanopee One', sans-serif;
+}
+.header p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+/* NavBar */
+.navbar{
+  background-color: #E8F0F2;
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar a{
+  color: #053742;
+  padding: 1.5%;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+.navbar a:hover {
+  background-color: #39A2DB;
+  color: #053742;
+}
+
+/* Main body */
+/* Container */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* side container */
+.side-container{
+  flex: 30%;
+  padding: 2%;
+  background-color: #053742;
+  color:  #E8F0F2;
+}
+.myImg img{
+  width: 100%;
+  padding:4%;
+  height: 300px;
+}
+.sc-img img{
+  height: 200px;
+  width: 100%;
+  padding:4%;
+}
+.side-container h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.side-container h5, .side-container h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.side-container p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+/* Main container */
+.main-container{
+  flex: 70%;
+  padding: 2%;
+  background-color: #A2DBFA;
+  color: E8F0F2
+}
+.mc-img img{
+  height: 420px;
+  width: 100%;
+  padding: 4%;
+}
+.main-container h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.main-container h5{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.main-container p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.6
+}
+
+/* Fotter */
+footer{
+  padding: 2%;
+  text-align: center;
+  background-color: #E8F0F2;
+  line-height: 1.6;
+}
+footer .ftr-logo {
+  color:  #053742;
+  margin: 0 4px;
+}
+footer p{
+  color:  #053742;
+}
+footer .ftr-logo:hover {
+  color: #39A2DB;
+}
+
+@media screen and (max-width: 720px) {
+  .container, .navbar{
+    flex-direction: column;
+  }
+  .mc-img img{
+    width: 100%;
+    padding: 5%;
+    height: 280px;
+  }
+}
